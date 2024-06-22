@@ -14,7 +14,6 @@
                 <img src="photo.png" alt="">
             </div>
             <ul class="nav-menu">
-                <li><a href="/index.html">About</a></li>
                 <li><a href="https://t.me/earnlive_bot/">Launch Bot</a></li>
                 <li><a href="https://wa.me/2349015010957?text=Hi+EarnBot+Customer+Service">Contact</a></li>
             </ul>
@@ -26,6 +25,7 @@
         <p>Click the button below to get redirected to our WhatsApp DM and buy your token.</p>
         <button class="whatsapp-button" onclick="redirectToWhatsApp()">Buy Token on WhatsApp</button>
         <button class="whatsapp-button" onclick="redirectToTelegram()">Back to EarnBot</button>
+        <button class="whatsapp-button" onclick="redirectToAbout()">About EarnBot</button>
     </div>
     <div class="earn">
         <img src="earnb.jpg" alt="">
@@ -40,6 +40,9 @@
         }
         function redirectToTelegram() {
             window.location.href = 'https://t.me/earnlive_bot/';
+        }
+        function redirectToAbout() {
+            window.location.href = 'earn-bot-seven.vercel.app';
         }
     </script>
 </body>
