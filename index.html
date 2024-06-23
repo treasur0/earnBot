@@ -6,12 +6,16 @@
     <title>About EarnBot</title>
     <link rel="stylesheet" href="CSS/about.css">
     <link rel="icon" sizes="180*180" href="CSS/earnb.jpg" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <div class="logo">
                 <img src="CSS/photo.png" alt="Your Logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class='bx bx-menu'></i>
             </div>
             <ul class="nav-menu">
                 <li><a href="token/token.html">Buy Token</a></li>
@@ -53,7 +57,7 @@
     </div>
     <div class="container-i">
         <h2>Withdraw Your Earnings In A Flash</h2>
-        <p>With a minimum withdrawal threshold of ₦4500, you can cash out your earnings easily. 
+        <p>With a minimum withdrawal threshold of ₦4000, you can cash out your earnings easily. 
             <br>No hidden fees or complicated processes - just straightforward earnings.
             <br>Tutorials on how to withdraw would be sent 📤, please ensure you stay in touch
             <br>with us on our Telegram channel for more updates.
@@ -78,6 +82,35 @@
         </h2>
         
     </div>
+    <div class="container-i">
+        <h2>EarnBot's interface</h2>
+        <p>EarnBot has a User-friendly interface which enables easy understanding for old or new Telegram Users
+          <br>so as to be able to navigate through the bot easily without any issues...
+          <br>After users use the <b>/start</b> button on the bot, users can enter their <b>Registration Token</b> and gain full
+          <br>access to all of the Bot's earning features. The <b>"Buy Code"</b> button is also available on the /start page
+          <br>for users who have not bought the registration token and the <b>"About"</b> button redirects you to visit our website
+        </p>
+    </div>
+    <div class="ref">
+        <img src="CSS/eb1.png" alt="EarnBot interface">
+    </div>
+    <div class="container-i">
+        <h2>EarnBot's Main Menu</h2>
+        <p>On EarnBot's main menu, the first button there is the <b>Referral Link</b> button where users get their unique referral link.
+            <br>The second button is the <b>Balance</b> button where users can see their available Balance incase they want to attempt withdrawal.
+            <br>The <b>Withdraw</b> button prompts you submit your bank details for the placement of withdrawal from your available Balance.
+            <br>The <b>Buy Code</b> button is used to purchase EarnBot tokens.
+            <br>The <b>Channel</b> button shows you our channels that you can join.
+            <br>Incase of help or assistance, use the <b>Help</b> button to reach us 😊.
+            <br>The <b>Bet</b> function offers games that you can use to double your earnings!
+            <br>You can check how many friends you have reffered to EarnBot using the <b>Ref Count</b> button.
+
+          <br>
+        </p>
+    </div>
+    <div class="ref">
+        <img src="CSS/eb2.png" alt="">
+    </div>
 
     <div class="earn">
         <img src="CSS/earnb.jpg" alt="">
@@ -99,6 +132,20 @@
         }
         function redirectToToken() {
             window.location.href = 'token/token.html';
+        }
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const menuIcon = document.querySelector('.menu-icon i');
+
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                menuIcon.classList.remove('bx-x');
+                menuIcon.classList.add('bx-menu');
+            } else {
+                navMenu.classList.add('active');
+                menuIcon.classList.remove('bx-menu');
+                menuIcon.classList.add('bx-x');
+            }
         }
     </script>
 </body>

@@ -39,13 +39,24 @@ body {
 .navbar .logo img {
     height: 200px; 
     width: 200px;
+    transition: height 0.3s, width 0.3s;
 }
 
 .nav-menu {
     list-style-type: none;
     display: flex;
 }
-
+.navbar .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 330px;
+    margin-top: -120px;
+    padding-bottom: 110px;
+}
+.navbar .menu-icon :hover{
+    color: rgb(216, 200, 236);
+}
 .nav-menu li {
     margin-right: 20px;
 }
@@ -123,9 +134,10 @@ p {
 }
 .ref img{
     width: 1080px;
-    height: 520px;
+    height: 720px;
     margin-top: 10px;
-    margin: 20px;
+    margin: 0px;
+    padding: 8px;
 }
 
 .telegram{
@@ -181,16 +193,18 @@ p {
     .navbar .container {
         flex-direction: column;
         align-items: flex-start;
-        text-align: center;
     }
     .navbar .logo{
         
        padding: 0 40px; 
     }
+    .navbar .menu-icon {
+        display: block;
+    }   
 
     .navbar .logo img {
-        height: 90px; 
-        width: 90px;
+        height: 80px; 
+        width: 120px;
        margin-top: 50px;
 
     }
@@ -198,7 +212,7 @@ p {
         max-width: 100%;
         height: auto;
         margin-top: 10px;
-        margin: 10px;
+        margin: 0px;
       
     }
 
@@ -207,10 +221,19 @@ p {
         width: 100%;
         margin-top: -90px;
         margin-bottom: 10px;
+        display: none;
+        text-align: right;
+        
+        
     }
 
+    .nav-menu.active {
+        display: flex;
+    }
+
+
     .nav-menu li {
-        margin-right: 0;
+        margin-right: 5 0px;
         margin-bottom: 15px;
     }
 
@@ -246,19 +269,24 @@ p {
     }
 
     .navbar .logo img {
-        height: 50px; 
-        width: 50px;
+        height: 120px; 
+        width: 120px;
     }
 
     .nav-menu {
         flex-direction: column;
         width: 100%;
+        display: none;
     }
+    .nav-menu.active {
+        display: flex;
+    }
+    
     .ref img {
         max-width: 100%;
         height: auto;
         margin-top: 10px;
-        margin: 10px;
+        margin: 0px;
       
     }
 
