@@ -13,7 +13,23 @@ body {
     font-family: Mont;
     background-color: #f4f4f4;
 }
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #190417; /* Background color of your choice */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
+#loader img {
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+}
 .navbar {
     background-color: rgb(25, 4, 23);
     color: white;
