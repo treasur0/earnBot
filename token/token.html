@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy Token</title>
     <link rel="stylesheet" href="token.css">
-    <link rel="icon" sizes="180*180" href="earnb.jpg" type="image/png">
+    <link rel="icon" sizes="180x180" href="earnb.jpg" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <div class="logo">
                 <img src="photo.png" alt="">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class='bx bx-menu'></i>
             </div>
             <ul class="nav-menu">
                 <li><a href="https://t.me/earnlive_bot/">Launch Bot</a></li>
@@ -34,13 +38,21 @@
     </div>
 
     <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const menuIcon = document.querySelector('.menu-icon i');
+
+            navMenu.classList.toggle('active');
+            menuIcon.classList.toggle('bx-menu');
+            menuIcon.classList.toggle('bx-x');
+        }
+
         function redirectToWhatsApp() {
             window.location.href = 'https://wa.me/2349015010957?text=I%20want%20to%20buy%20a%20token';
         }
         function redirectToTelegram() {
             window.location.href = 'https://t.me/earnlive_bot/';
         }
-       
     </script>
 </body>
 </html>
