@@ -27,8 +27,8 @@ body {
 }
 
 #loader img {
-    width: 300px; /* Adjust size as needed */
-    height: 300px; /* Adjust size as needed */
+    width: 220px; /* Adjust size as needed */
+    height: 220px; /* Adjust size as needed */
 }
 .navbar {
     background-color: rgb(25, 4, 23);
