@@ -9,9 +9,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div id="loader">
-        <img src="moyUPGbF0z.gif" alt="">
-        <img src="photo.png" alt="Your Logo">
+    <div id="loading-screen">
+        <img src="photo.png" alt="Your Logo" class="glowing-logo">
     </div>
     <nav class="navbar">
         <div class="container">
@@ -47,11 +46,11 @@
         function redirectToTelegram() {
             window.location.href = 'https://t.me/earnlive_bot/';
         }
-        document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() {
-        document.getElementById('loader').style.display = 'none';
-             }, 3500); 
-            });
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loading-screen').style.display = 'none';
+            }, 5000);
+        });
     </script>
 </body>
 </html>
