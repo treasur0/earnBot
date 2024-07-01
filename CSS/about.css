@@ -71,7 +71,7 @@ body {
     padding-bottom: 110px;
 }
 .navbar .menu-icon :hover{
-    color: #d8c8ec;
+    color: #229ED9;
 }
 .nav-menu li {
     margin-right: 20px;
@@ -139,7 +139,7 @@ body {
     
 }
 .container :hover{
-    color: #ffff;
+    color: #229ED9;
     transition: 1s;
 }
 .container-i{
@@ -152,7 +152,7 @@ body {
     margin: 10px auto;
 }
 .container-i :hover{
-    color: #25D366;
+    color: #229ED9;
     transition: 1s;
 }
 

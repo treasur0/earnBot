@@ -149,7 +149,7 @@ p {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 40px solid #190417;
-    animation: upAndDown 10s infinite;
+    animation: upAndDown 1s infinite;
     filter: drop-shadow(0 0 10px #190417);
 }
 
