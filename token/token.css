@@ -81,7 +81,7 @@ body {
 }
 
 .nav-menu li a:hover {
-    color: #25D366; /* Change color on hover */
+    color: #229ED9; /* Change color on hover */
 }
 
 .container {
@@ -119,8 +119,8 @@ p {
 }
 
 .whatsapp-button {
-    background-color: #25D366;
-    color: black;
+    background-color: #0088cc;
+    color: white;
     font-weight: 600;
     border: none;
     padding: 15px 30px;
@@ -133,7 +133,8 @@ p {
 }
 
 .whatsapp-button:hover {
-    background-color: #128C7E;
+    background-color: #229ED9;
+    transition: background-color 0.3s ease; /* Add a smooth transition */
 }
 .arrow-container {
     display: flex;
